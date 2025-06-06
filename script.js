@@ -675,7 +675,7 @@ function checkAndMarkOverdue(task, dueTextElement) {
       // ✅ NEW: Email reminder logic
       const oneHour = 60 * 60 * 1000;
       if (timeDiff <= oneHour && !task.emailNotified) {
-        // sendEmailReminder(task.title, dueDate.toLocaleString());
+        sendEmailReminder(task.title, dueDate.toLocaleString());
         console.log('sent email')
         // Update task to prevent repeat email
         task.emailNotified = true;
