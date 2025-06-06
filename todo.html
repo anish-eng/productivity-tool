@@ -1,0 +1,107 @@
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-do List</title>
+ 
+  <script src="https://kit.fontawesome.com/568482fbd7.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+  emailjs.init("h6paZMPbXAOJX1Bv-"); // Replace with your EmailJS public key
+</script>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/main.min.css" rel="stylesheet" />
+
+<!-- ✅ Your stylesheet -->
+<link rel="stylesheet" href="style.css" />
+
+<!-- ✅ FullCalendar JS (MUST be before your script.js) -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+
+<!-- FullCalendar CSS -->
+
+</head>
+<body>
+  <div class="container">
+    <div class="main-layout">
+      <!-- Left Panel: To-do Controls -->
+      <div class="left-panel">
+      
+        <h2 class="heading">To-do List <button id="calendarViewBtn">📅  View Calendar</button></h2>
+        
+      
+        <div class="progress-bar">
+          <div class="inner-progress">
+            <span class="progress-text">0% Completed</span>
+          </div>
+        </div>
+  <!-- working code -->
+        <!-- <form id="taskForm">
+          <div class="form">
+            <input type="text" class="taskinput" placeholder="Type a new task or enter using voice!" required />
+            <button type="submit" class="addtask">Add Task</button>
+            <i class="fa-solid fa-microphone fa-2x mic-icon" id="voiceInputBtn" title="Click to speak"></i>
+          </div>
+        </form> -->
+
+        <form id="taskForm">
+          <div class="form">
+            <div class="input-wrapper">
+              <input type="text" class="taskinput" placeholder="Type a new task or enter using voice!" required />
+              <i class="fa-solid fa-microphone mic-icon" id="voiceInputBtn" title="Click to speak"></i>
+            </div>
+            <button type="submit" class="addtask">Add Task</button>
+            
+             
+            
+          </div>
+        </form>
+  
+        <div class="tabs">
+          <div id="activetab" class="tab active" data-filter="active">Active Tasks</div>
+          <div id="completedtab" class="tab" data-filter="completed">Completed</div>
+        </div>
+  
+        <!-- <div class="view-toggle">
+          <button id="calendarViewBtn">📅 Calendar View</button>
+        </div> -->
+
+ 
+  
+        <div class="todos" id="taskList"></div>
+  
+        <!-- <div class="export-buttons">
+          <button class="export-csv"><i class="fa-solid fa-file-export"></i> Export to CSV</button>
+          <button class="export-pdf"><i class="fa-solid fa-file-export"></i> Export to PDF</button>
+        </div> -->
+      </div>
+    </div>
+  
+    <!-- Slide-in Calendar Drawer -->
+    <div id="calendarDrawer">
+      <div class="drawer-header">
+        <h3>📅 Calendar</h3>
+        <button id="closeCalendar">&times;</button>
+      </div>
+      <div id="calendar"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+  <script src="script.js"></script>
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3 id="modalTitle">Task</h3>
+      <p id="modalDue">Task due on: </p>
+      <p id="modalDuedate"><i class="fa fa-calendar" ></i>: ...</p>
+      <p id="modalDuetime"><i class="fa-solid fa-clock"></i>: ...</p>
+    </div>
+  </div>
+</body>
+</html>
