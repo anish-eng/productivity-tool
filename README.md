@@ -17,11 +17,20 @@ on features that really enhance the user experience and helps boost their produc
 - 💾 **Persisting tasks** When tasks are created , they are saved and persisted in the browser local storage, so they can be accessed even when the browser tab is closed
   
 
-**Live demo- **- https://productivity-tool.netlify.app/
+**Live Link- **- https://productivity-tool.netlify.app/
 
 
-**Tech Stack**- HTML, CSS, Javascript
+**Tech Stack**- HTML, CSS, Javascript, Netlify for deployment
 
 **Impact**- 
 
-- Enhances user productivity and satisfaction by streamlining 
+- Enhances user productivity and satisfaction by helping users keep track of their todo tasks and also providing them with additional good to have features like calendar integration
+  and voice input.
+
+**Future improvements and enhancements ideas **
+
+- Convert to a mobile app or progressive mobile app so that user can access the app at their convenience rather than visiting the URL
+- Make UI improvements and make it more responsive with a better UX and look and feel
+- Instead of storing tasks on localstorage, introduce a backend, so multiple users can be handled and information stored securely
+- Implement subtasks and priority based scheduling , integration with google calendar and other productivity tools
+
