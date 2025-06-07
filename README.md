@@ -1,7 +1,7 @@
 <img width="1710" alt="Screenshot 2025-06-07 at 1 41 58 PM" src="https://github.com/user-attachments/assets/53e36407-0471-4fd7-b0bb-2b3b8e148668" />
 # productivity-tool
-A dynamic and feature rich client-side todo- list application built with vanilla javascript with the all the possible features that a user needs to track their tasks- Not an ordinary application, but provides extra add 
-on features that really enhance the user experience and helps boost their productivity.
+A dynamic and feature rich client-side todo-list application built with vanilla javascript with the all the possible features that a user needs to track their tasks- 
+Not an ordinary application, but provides extra add on features that really enhance the user experience and helps boost their productivity.
 
 
 🚀 **Features:**
